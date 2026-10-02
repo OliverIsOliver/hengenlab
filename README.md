@@ -10,13 +10,16 @@ The four `all_crosses_*.pkl` files contain processed crossings from two ALS mice
 2. Calculated ten gait measurements, including step speed, stance and stride durations, duty factor, total steps, and gait adjustments. I assigned trial days relative to a 07:00 boundary.
 3. Applied a 1.5×IQR outlier rule to the ten measurements and applied the outlier rule to trial-day and day/night groups, pooling the mice represented in each group to remove circadian influence.
 4. Compared ALS and WT crossings before trial day 80 (~P170) by fitting a separate two-segment piecewise-linear trend to each genotype and plotting the fitted lines alongside shaded daily mean ± standard deviation bands.
-## Figures
 
 ### Cleaning
 
 This example shows one crossing before cleaning and after cleaning.
 
 ![One ladder crossing before and after gait cleaning](figures/touch_cleaning.png)
+
+### Calculations
+
+I calculated these metrics to try to determine which one was most sensitive to ALS: [average step speed](#results), [average stance duration](figures/average_stance_duration.png), [average stride duration](figures/average_stride_duration.png), [average step duration](figures/average_step_duration.png), [average duty factor](figures/average_duty_factor.png), [average step-to-stride duration](figures/average_step_to_stride_duration.png), [average step length to stance duration](figures/average_step_length_to_stance_duration.png), [total steps](figures/total_steps.png), and [gait adjustments](figures/gait_adjustments.png).
 
 ### Results
 
